@@ -36,7 +36,7 @@
     $mail->isHTML(true);
     
     $mail->Subject = 'Lead From Ads/Website';
-    $mail->Body = "Hi, <br/> We have new lead please reply within 24 hours <b><br/><br/>Name : $name<br/>Email ID: $email<br/>Phone:$phone<br/><br/></b>Thanks<br/>Lead Manager";
+    $mail->Body = "Hi, <br/> We have new lead please reply within 24 hours <b><br/><br/>Name : $name<br/>Email: $email<br/>Phone: $phone<br/><br/></b>Thanks<br/>Lead Manager";
     $mail->AltBody = "Subscribed Successfully";
     
     if(!$mail->send()) 
