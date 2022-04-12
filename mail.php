@@ -28,10 +28,10 @@
     //Set TCP port to connect to 
     $mail->Port = 587;                                   
     
-    $mail->From = "info@digilucks.com";
     $mail->FromName = "Lead Manager";
-    
-    $mail->addAddress($email,$name);
+    $mail->From = "info@digilucks.com";
+ 
+    $mail->addAddress($email,info@digilucks.com,$name);
     
     $mail->isHTML(true);
     
