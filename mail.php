@@ -3,7 +3,9 @@
     $email = $_POST['Email'];
     $name = $_POST['Name'];
     $phone= $_POST['Phone'];
-    $headers = "Cc: info@digilucks.com";
+    $headers = Cc: info@digilucks.com;
+    $email_to = "info@digilucks.com,rajshakya.ai@gmail.com";
+
    // $con= mysqli_connect('localhost','root','','test');
     
     //$result = $con->query("insert into mail (name,email,mobile)values('$name','$email','$phone')");
@@ -32,7 +34,7 @@
     $mail->FromName = "Lead Manager";
     $mail->From = "info@digilucks.com";
  
-    $mail->addAddress($email,$headers,$name);
+    $mail->addAddress($email,$headers,$email_to,$name);
     
     $mail->isHTML(true);
     
