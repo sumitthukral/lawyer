@@ -4,7 +4,7 @@
     $name = $_POST['Name'];
     $phone= $_POST['Phone'];
     //$headers = Cc: info@digilucks.com;
-    $email_to = "info@digilucks.com,rajshakya.ai@gmail.com";
+   // $email_to = "info@digilucks.com,rajshakya.ai@gmail.com";
 
    // $con= mysqli_connect('localhost','root','','test');
     
@@ -34,7 +34,7 @@
     $mail->FromName = "Lead Manager";
     $mail->From = "info@digilucks.com";
  
-    $mail->addAddress($email,$email_to,$name);
+    $mail->addAddress($email,$name);
     
     $mail->isHTML(true);
     
