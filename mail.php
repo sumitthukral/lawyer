@@ -31,7 +31,7 @@
     $mail->FromName = "Lead Manager";
     $mail->From = "info@digilucks.com";
  
-    $mail->addAddress($email,info@digilucks.com,$name);
+    $mail->addAddress($email,$name);
     
     $mail->isHTML(true);
     
