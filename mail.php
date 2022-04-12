@@ -13,7 +13,7 @@
     $mail = new PHPMailer;
     
     //Enable SMTP debugging. 
-    $mail->SMTPDebug = 3;                               
+   // $mail->SMTPDebug = 3;                               
     //Set PHPMailer to use SMTP.
     $mail->isSMTP();            
     //Set SMTP host name                          
