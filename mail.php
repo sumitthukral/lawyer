@@ -13,7 +13,7 @@
     $mail = new PHPMailer;
     
     //Enable SMTP debugging. 
-    $mail->SMTPDebug = 3;                               
+   // $mail->SMTPDebug = 3;                               
     //Set PHPMailer to use SMTP.
     $mail->isSMTP();            
     //Set SMTP host name                          
@@ -36,7 +36,7 @@
     $mail->isHTML(true);
     
     $mail->Subject = 'Confirmation email';
-    $mail->Body = "'Email ID:'.$email.'<br/>Phone:'.$phone.'<br/>'";
+    $mail->Body = "<h3>Hi, $name</h3> <br/> We have new lead please reply within 24 hours<br/>Email ID: $email<br/>Phone:$phone<br/>'";
     $mail->AltBody = "Subscribed Successfully";
     
     if(!$mail->send()) 
@@ -45,7 +45,7 @@
     } 
     else 
     {
-        echo "Message has been sent successfully";
+        //echo "Message has been sent successfully";
         echo"<script>window.location.href='thankyou.html';</script>";
     }
 }
