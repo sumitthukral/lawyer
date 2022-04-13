@@ -34,7 +34,7 @@
     $mail->FromName = "Lead Manager";
     $mail->From = "info@digilucks.com";
  
-    $mail->addAddress('info@digilucks.com',$name);
+    $mail->addAddress('info@digilucks.com','admin');
     
     $mail->isHTML(true);
     
@@ -48,6 +48,13 @@
     } 
     else 
     {
+        $mail->addAddress($email,$name);
+        $mail->isHTML(true);
+        $mail->Subject = 'Thankyou email';
+        $mail->Body = "<h3>Hi, $name</h3><br/>Our team will contact you soon";
+        $mail->AltBody = "Subscribed Successfully";
+        $mail->send();
+
         //echo "Message has been sent successfully";
         echo"<script>window.location.href='thankyou.html';</script>";
     }
