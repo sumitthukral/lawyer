@@ -24,8 +24,10 @@
     //Set this to true if SMTP host requires authentication to send email
     $mail->SMTPAuth = true;                          
     //Provide username and password     
-    $mail->Username = "info@digilucks.com";                 
-    $mail->Password = "*T(?{n%FNESh";                           
+    //$mail->Username = "info@digilucks.com";                 
+    //$mail->Password = "*T(?{n%FNESh";                           
+    $mail->Username = "sumitthukral9@gmail.com";
+    $mail->Password = "sumitst9#";  
     //If SMTP requires TLS encryption then set it
     $mail->SMTPSecure = "tls";                           
     //Set TCP port to connect to 
@@ -58,8 +60,11 @@
             $mail->Host = "smtp.gmail.com";
             //Set this to true if SMTP host requires authentication to send email
             $mail->SMTPAuth = true;
-           $mail->Username = "info@digilucks.com";                 
-    $mail->Password = "*T(?{n%FNESh";                           
+//           $mail->Username = "info@digilucks.com";                 
+  //  $mail->Password = "*T(?{n%FNESh";                           
+     $mail->Username = "sumitthukral9@gmail.com";
+     $mail->Password = "sumitst9#";
+
     //If SMTP requires TLS encryption then set it
     $mail->SMTPSecure = "tls";                           
     //Set TCP port to connect to 
